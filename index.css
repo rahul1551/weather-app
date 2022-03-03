@@ -1,0 +1,218 @@
+@font-face {
+    font-family: captain;
+    src: url(./CAfont/American\ Captain.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #FDDBD1;
+}
+
+main{
+    display: flex;
+}
+
+.heading{
+    margin-top: 1rem;
+    font-family: captain;
+    text-align: center;
+    font-size: 3rem;
+    color: #EB426D;
+    letter-spacing: 0.5rem;
+    line-height: 5rem;
+
+}
+.heading-style{
+    transition: 0.7s;
+    letter-spacing: 1rem;
+    color: darkred;
+}
+
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 100vh;
+}
+
+
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#input-city{
+    font-family: captain;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    width: 65%;
+    border: 1px solid #EB426D;
+    padding: 1rem 1.5rem;
+    background-color: #f4f3d5;
+    border-radius: 1000px;
+}
+
+#input-city:focus{
+    outline: 1px solid #EB426D;
+
+}
+
+#btn-input{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-family: captain;
+    margin-top: 1rem;
+    width: 65%;
+    border: none;
+    padding: 1rem 1.5rem;
+    background-color: #EB426D;
+    border-radius: 1000px;
+}
+
+.right{
+    width: 60%;
+    height: 100vh;
+}
+
+.right-box{
+    height: calc(100vh - 4rem);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background: rgba( 235, 66, 109, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+.weather-head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: captain;
+    font-size: 3rem;
+}
+
+.weather-now{
+    text-align: center;
+    font-size: 5rem;
+    font-family: captain;
+    letter-spacing: 1rem;
+    color: #b1d8b9;
+
+}
+
+.temp-up-low{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temp-max{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-max h2{
+    font-family: captain;
+    font-size: 2rem;
+    color: black;
+}
+.temp-max h3{
+    font-family: captain;
+    font-size: 1.5rem;
+    color: #EB426D;
+}
+
+.temp-min{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp-min h2{
+    font-family: captain;
+    font-size: 2rem;
+    color: black;
+}
+.temp-min h3{
+    font-family: captain;
+    font-size: 1.5rem;
+    color: #EB426D;
+}
+
+.extra-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wind h2{
+    font-family: captain;
+    font-size: 2rem;
+    color: black;
+}
+.wind h3{
+    font-family: captain;
+    font-size: 1.5rem;
+    color: #EB426D;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.humidity h2{
+    font-family: captain;
+    font-size: 2rem;
+    color: black;
+}
+.humidity h3{
+    font-family: captain;
+    font-size: 1.5rem;
+    color: #EB426D;
+}
+.realfeel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.realfeel h2{
+    font-family: captain;
+    font-size: 2rem;
+    color: black;
+}
+.realfeel h3{
+    font-family: captain;
+    font-size: 1.5rem;
+    color: #EB426D;
+}
+
+@media (max-width: 500px){
+    main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+
+
